@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovieMatch — Recommendation System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Recommendation Engine</p>
+        <h1>MovieMatch</h1>
+        <p class="subtitle">Discover your next favorite film with content-based, collaborative, and hybrid recommendations.</p>
+      </div>
+    </header>
+
+    <main class="layout">
+      <aside class="panel controls">
+        <section>
+          <h2>Strategy</h2>
+          <div class="method-tabs" role="tablist">
+            <button class="tab active" data-method="hybrid" role="tab">Hybrid</button>
+            <button class="tab" data-method="collaborative" role="tab">Collaborative</button>
+            <button class="tab" data-method="content" role="tab">Content-based</button>
+          </div>
+          <p class="method-desc" id="method-desc">Blends user taste patterns with movie features for balanced picks.</p>
+        </section>
+
+        <section id="user-section">
+          <h2>Select User</h2>
+          <select id="user-select" aria-label="Select user"></select>
+          <div id="user-ratings" class="user-ratings"></div>
+        </section>
+
+        <section id="liked-section" class="hidden">
+          <h2>Movies You Like</h2>
+          <p class="hint">Pick titles to build your taste profile.</p>
+          <div id="movie-checklist" class="movie-checklist"></div>
+        </section>
+
+        <section>
+          <label for="top-n">Results</label>
+          <input type="range" id="top-n" min="3" max="10" value="5" />
+          <span id="top-n-value" class="range-value">5</span>
+        </section>
+
+        <button id="recommend-btn" class="primary-btn">Get Recommendations</button>
+      </aside>
+
+      <section class="panel results-panel">
+        <div class="results-header">
+          <h2>Recommendations</h2>
+          <span id="results-meta" class="results-meta">Choose a strategy and click Get Recommendations</span>
+        </div>
+        <div id="results" class="results-grid">
+          <div class="empty-state">
+            <div class="empty-icon">🎬</div>
+            <p>Your personalized picks will appear here.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section class="catalog-section">
+      <div class="catalog-header">
+        <h2>Browse Catalog</h2>
+        <p>Click any movie to find similar titles.</p>
+      </div>
+      <div id="catalog" class="catalog-grid"></div>
+    </section>
+  </div>
+
+  <div id="toast" class="toast hidden" role="status"></div>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>

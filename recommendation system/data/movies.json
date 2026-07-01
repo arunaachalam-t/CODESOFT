@@ -1,0 +1,14 @@
+[
+  {"id": 1, "title": "The Matrix", "genres": ["sci-fi", "action"], "director": "Wachowski", "year": 1999},
+  {"id": 2, "title": "Inception", "genres": ["sci-fi", "thriller"], "director": "Nolan", "year": 2010},
+  {"id": 3, "title": "Interstellar", "genres": ["sci-fi", "drama"], "director": "Nolan", "year": 2014},
+  {"id": 4, "title": "The Dark Knight", "genres": ["action", "crime"], "director": "Nolan", "year": 2008},
+  {"id": 5, "title": "Pulp Fiction", "genres": ["crime", "drama"], "director": "Tarantino", "year": 1994},
+  {"id": 6, "title": "Kill Bill", "genres": ["action", "crime"], "director": "Tarantino", "year": 2003},
+  {"id": 7, "title": "Toy Story", "genres": ["animation", "family"], "director": "Lasseter", "year": 1995},
+  {"id": 8, "title": "Finding Nemo", "genres": ["animation", "family"], "director": "Stanton", "year": 2003},
+  {"id": 9, "title": "The Shawshank Redemption", "genres": ["drama"], "director": "Darabont", "year": 1994},
+  {"id": 10, "title": "Forrest Gump", "genres": ["drama", "romance"], "director": "Zemeckis", "year": 1994},
+  {"id": 11, "title": "Blade Runner 2049", "genres": ["sci-fi", "thriller"], "director": "Villeneuve", "year": 2017},
+  {"id": 12, "title": "Arrival", "genres": ["sci-fi", "drama"], "director": "Villeneuve", "year": 2016}
+]
